@@ -21,13 +21,7 @@
             {% include blog/post_info.liquid author=post.author date=post.date %}
           </header>
           {% if site.excerpt or site.theme_settings.excerpt %}
-              <div class="excerpt">
-                  {% if site.excerpt == "truncate" %}
-                     {{ post.content | strip_html | truncate: '10' | escape }}
-                  {% else %}
-                     {{ post.excerpt | strip_html | escape }}
-                  {% endif %}
-              </div>
+             
           {% endif %}
       </span>
     </div>
